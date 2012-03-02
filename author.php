@@ -11,16 +11,16 @@ endif;
 		<span class="contenttop"></span>
 		<div class="clear"></div>
 		<div id="camper-info">
-		    <h1><?php echo $current_camper->display_name; ?></h1>
+		    <h1><?php echo $current_camper->first_name; ?>&nbsp; <?php echo $current_camper->last_name; ?></h1>
 		    <div class="vcard" id="hcard-<?php echo $lastname; ?>">
 
             <?php echo get_avatar( $current_camper->user_email, $size = '96'); ?>&nbsp;&nbsp;	
         		<ul>
-        		    <?php if ( $title = $current_camper->title ): ?>
-        			<li class="title"><?php echo $current_camper->title; ?></li>
+        		    <?php if ( $title = $current_camper->user_title ): ?>
+        			<li class="title">Title / Position: <?php echo $current_camper->user_title; ?></li>
         			<?php endif; ?>
-        			<?php if ($institution = $current_camper->institution): ?>
-        			<li class="institution"><?php echo $current_camper->institution; ?></li>
+        			<?php if ($institution = $current_camper->user_organization): ?>
+        			<li class="user_organization">Organization: <?php echo $current_camper->user_organization; ?></li>
         			<?php endif; ?>
         			<?php
         			// Checks to see if the user_url isn't empty and if its length is greater than 7 (so as not to write http:// only links) 

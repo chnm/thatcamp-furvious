@@ -45,6 +45,12 @@ input[type=submit] { font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
 pre { font-family: "Courier 10 Pitch", Courier, monospace; }
 code { font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
+/* Content */
+
+.post ul li {
+line-height: 1.5em;
+}
+
 /* Header */
 #header { padding: 0px 0 10px; }
 
@@ -108,20 +114,27 @@ display:block;
 	
 	.camper_info {
 		float: left;
-		width: 130px;
-		padding: 0 10px 10px 0;
+		width: 140px;
+		padding: 0 0px 10px 0;
+
 	}
 	
 	.camper_avatar {
 		border: none;
 		overflow: hidden;
+		width: 140px; 
 	}
 	
 	.camper_name, .camper_posts {
 		font-size: 13px;
 		line-height: 16px;
+		margin-left: 5px; 
 	}
 
+	.camper_info a:link {
+		text-decoration:none;
+	}
+	
 #camper-info {
     margin-left: 160px;
 }
@@ -132,7 +145,7 @@ display:block;
 
 #camper-info .vcard img {
     float:left; 
-    margin:0 1em 1em 0;
+    margin: 0 1em 1em 0;
 }
 
 #camper-description {
@@ -168,6 +181,10 @@ display:none;
 label {
 font-style: bold;
 font-size: 11pt;
+}
+
+.textfield {
+width: 200px; 
 }
 
 p.explanation {
