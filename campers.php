@@ -14,7 +14,7 @@ Template Name: Campers
 			<li class="entry_post">
 				<div class=" pr30 pl30">
 					<h1 class="campers_title maintitle"><a class="free" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-					<p>THATCampers: to add your picture to this page, sign up for <a href="http://en.gravatar.com/site/signup/">Gravatar.com</a> and upload an image there.</p>
+					<p>THATCampers: to add your picture to this page, log in and upload a picture to your profile or sign up for <a href="http://en.gravatar.com/site/signup/">Gravatar.com</a> and upload an image there.</p>
 					<?php $siteUsers = get_users('orderby=display_name&exclude=246'); 
 					foreach ($siteUsers as $usr) { ?>			
 							<div class="camper_info">	 			
